@@ -9,8 +9,13 @@ btnAdd.click(()=>
 
 {
 
-    console.log(inpNewTask.val())
-    inpNewTask.val("")
+    let listItem =$('<li> '.replace{
+        'class':'list-group-item',
+        text:inpNewTask.val()
+    })
+    ulTasks.append(listItem)
+
+    inpNewTask.val('')
 
 }
 
